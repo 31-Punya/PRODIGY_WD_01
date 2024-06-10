@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('background-image.jpg') no-repeat center center fixed; /* Update the path to your image */
+    background-size: cover;
+    position: relative;
+    color: #333;
+}
+
+/* Create an overlay to add transparency */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and transparency here */
+    z-index: -1;
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+section .content {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for content */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+section#home .content {
+    background-color: rgba(255, 255, 255, 0.6); /* Slightly more transparent for the homepage */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Project and Product Sections */
+.project, .product, .tip {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.project img, .product img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.project iframe {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .gallery img {
+        max-width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery img {
+        max-width: 100%;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<!-- Expert Tips and Advice -->
+    <section id="tips">
+        <div class="content">
+            <h2  style="color: darkgreen;"><b>TIPS & ADVICE</b></h2>
+            <div class="tip">
+
+                <h4>Here are some useful and engaging tips you can consider for your DIY home improvement:</h4>
+
+                <ul>
+                    <li><b>Safety First:</b> Always wear protective gear such as gloves, goggles, and masks when working with tools or chemicals. Ensure your workspace is well-ventilated to avoid inhaling fumes from paint or solvents.</li>
+                    <li><b>Measure Twice, Cut Once:</b> Double-check your measurements before cutting any material to avoid mistakes and wastage.</li>
+                    <li><b>Use the Right Tools:</b> Invest in high-quality tools that are appropriate for your project to ensure efficiency and safety.</li>
+                    <li><b>Preparation is Key:</b> Before starting a project, gather all necessary materials and tools to avoid interruptions. Clean and prepare surfaces properly for better results, especially when painting or staining.</li>
+                    <li><b>Start Small:</b> If you're new to DIY, begin with small projects to build your confidence and skills before tackling larger tasks.</li>
+                    <li><b>Learn from Experts:</b> Watch tutorial videos or read guides from experienced DIYers to gain valuable insights and techniques.</li>
+                    <li><b>Plan Your Budget:</b> Create a detailed budget for your project, including materials, tools, and potential unexpected costs.</li>
+                    <li><b>Stay Organized:</b> Keep your workspace tidy and organized to improve efficiency and reduce the risk of accidents.</li>
+                    <li><b>Eco-Friendly Practices:</b> Consider using recycled or upcycled materials to minimize environmental impact. Choose low-VOC (volatile organic compounds) paints and finishes for healthier indoor air quality.</li>
+                    <li><b>Regular Maintenance:</b> Perform regular maintenance on your tools to keep them in good working condition. Check for any repairs needed in your home periodically to prevent small issues from becoming major problems.</li>
+                    <li><b>Creative Storage Solutions:</b> Utilize vertical space for storage by installing shelves or hooks. Repurpose old furniture or materials to create unique and functional storage units.</li>
+                    <li><b>Lighting Matters:</b> Use a combination of ambient, task, and accent lighting to enhance the functionality and aesthetics of your space. Consider installing dimmer switches for adjustable lighting options.</li>
+                    <li><b>Test Colors:</b> Before committing to a paint color, test it on a small area of your wall to see how it looks in different lighting conditions.</li>
+                    <li><b>Gardening Tips:</b> Choose native plants for your garden as they are easier to maintain and require less water. Use compost to enrich your soil and promote healthy plant growth.</li>
+                    <li><b>Home Cleaning Hacks:</b> Use natural cleaning solutions like vinegar and baking soda to keep your home clean and eco-friendly. Regularly declutter to maintain a neat and stress-free living environment.</li>
+                </ul>
+                
+                <p>These tips cover a range of topics that can help to improve your DIY projects, maintain tools, and create a safer, more efficient, and aesthetically pleasing living space.</p>
+                <a href="B4 and After Gallery.html" class="cta-button">Next</a>
+                <a href="Index.html" class="cta-button">Go Back</a>
+            </div>
+        
+        </div>
+    </section>
+    </body>
+    </html>

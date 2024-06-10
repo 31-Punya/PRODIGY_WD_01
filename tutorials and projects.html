@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('background-image.jpg') no-repeat center center fixed; /* Update the path to your image */
+    background-size: cover;
+    position: relative;
+    color: #333;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and transparency here */
+    z-index: -1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+section {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+section .content {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+section#home .content {
+    background-color: rgba(255, 255, 255, 0.6); 
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.project, .product, .tip {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.project img, .product img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.project iframe {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .gallery img {
+        max-width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery img {
+        max-width: 100%;
+    }
+}
+
+</style>
+</head>
+<body>
+ 
+ <!-- Tutorials and Project Ideas -->
+    <section id="tutorials">
+        <div class="content">
+            <h2 style="color: darkgreen;"><b>Tutorials and Project Ideas</b></h2>
+            <div class="project">
+                <h3 style="color: #333;"><b>PROJECT 1: DIY Wall Arts:</b></h3>
+                <h4><b>MANDALA ART:</b></h4>
+
+                <h5>Why Mandala?</h5>
+
+                <p>Mandala art has several qualities that contribute to making a house or living hall attractive and peaceful:</p>
+                <li>Mandala designs create harmony and order in a space due to their symmetrical and well-balanced nature.</li>
+                <li>The detailed and repetitive motifs in mandala art engage viewers, encouraging contemplation and providing visual 
+                    interest.</li>
+                <li>Mandala art carries deep spiritual and cultural meanings from traditions like Hinduism, Buddhism, and Native American 
+                    cultures, evoking feelings of mindfulness and connection to the universe.</li>
+                <li>The diverse colors used in mandala designs convey different emotions and moods, allowing for the creation of specific
+                    atmospheres in a living space.</li>
+                <li>Mandalas enable individuals to express creativity and inner thoughts, promoting relaxation, stress relief, and 
+                    self-reflection.</li>
+                <li>Mandala art can transform living spaces into havens of beauty and tranquility, fostering a sense of well-being for 
+                    occupants.</li>
+
+                <div class="container">
+                    <!-- Image to be centered -->
+                    <img src="C:\Users\Hp\Pictures/15.jpg" width="600px"  height="600px" alt="Centered Image">
+                </div>
+                
+                <h3>Tutorials:</h3>
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/c2N782GmftI?si=66nA3DkV7NWhTb3Z" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8f60tyVri7g?si=N_xkGMEV8kS-8idz" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <!-- Ratings and Comments Section -->
+                <div class="rating">
+                    <h3 style="color: #333;">Rate this Project:</h3>
+                    <form>
+                        <label>
+                            <input type="radio" name="rating" value="1"> 1
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="2"> 2
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="3"> 3
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="4"> 4
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="5"> 5
+                        </label>
+                    </form>
+                </div>
+
+                <div class="comments">
+                    <h4  style="color: #333;">Leave a Comment:</h4>
+                    <form>
+                        <textarea placeholder="Write your comment here..."></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <a href="Tips.html" class="cta-button">Next</a>
+                    <a href="Index.html" class="cta-button">Go Back</a>
+                    
+                </div>
+             
+            </div>
+        </div>
+    </section>
+    </body>
+    </html>

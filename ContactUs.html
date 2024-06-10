@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<style>
+/* CSS styles */
+body {
+  margin: 0;
+  font-family: 'Roboto';
+  background: rgb(83, 184, 71); /* Linear gradient background */
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.page-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contact-info p {
+  margin-bottom: 20px;
+}
+
+.contact-info strong {
+  font-weight: bold;
+}
+
+.contact-form {
+  margin-top: 30px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #191995;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="page-title">Contact Us</h1>
+  <div class="contact-info">
+    <p>If you have any questions, suggestions, or feedback, please feel free to reach out to us. We'd love to hear from you!</p>
+    
+    <p><strong>Email:</strong> renovate.create@gmail.com</p>
+    
+    <p><strong>Phone:</strong> +91-694-125-30063</p>
+    
+    <p><strong>Address:</strong> Hassan, Karnataka, India</p>
+  </div>
+  
+  <div class="contact-form">
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
