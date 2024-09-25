@@ -1,0 +1,197 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('background-image.jpg') no-repeat center center fixed; /* Update the path to your image */
+    background-size: cover;
+    position: relative;
+    color: #333;
+}
+
+/* Create an overlay to add transparency */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and transparency here */
+    z-index: -1;
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+section .content {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for content */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+section#home .content {
+    background-color: rgba(255, 255, 255, 0.6); /* Slightly more transparent for the homepage */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Project and Product Sections */
+.project, .product, .tip {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.project img, .product img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.project iframe {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    max-width: calc(33% - 20px);
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .gallery img {
+        max-width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery img {
+        max-width: 100%;
+    }
+}
+
+/* Newsletter Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input[type="email"] {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 400px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    color: #007BFF;
+}
